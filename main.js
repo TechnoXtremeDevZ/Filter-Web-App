@@ -1,8 +1,9 @@
 var nose_x;
 var nose_y;
+var moustache;
 
 function preload() {
-
+    moustache = "m.png";
 }
 
 function setup() {
@@ -19,10 +20,10 @@ function setup() {
 
 function draw() {
     image(video, 0, 0, 500, 400);
+    image(moustache, nose_x - 15, nose_y - 15, 30, 30)
 
     fill("red");
     stroke("red");
-    circle(nose_x, nose_y, 30);
 }
 
 function takeSnapshot() {
